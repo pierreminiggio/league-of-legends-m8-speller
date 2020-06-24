@@ -9,9 +9,9 @@
   "author": "Pierre MINIGGIO",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/pierreminiggio/youtube-video-watcher/issues"
+    "url": "https://github.com/pierreminiggio/league-of-legends-m8-speller/issues"
   },
-  "homepage": "https://github.com/pierreminiggio/youtube-video-watcher#readme",
+  "homepage": "https://github.com/pierreminiggio/league-of-legends-m8-speller#readme",
   "dependencies": {
     "iohook": "^0.6.5",
     "robotjs": "^0.6.0"
