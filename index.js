@@ -4,8 +4,8 @@ var robot = require("robotjs")
 const screenSize = robot.getScreenSize()
 robot.setKeyboardDelay(0)
 
-let spell = null;
-let champIconPos = null;
+let spell = null
+let champIconPos = null
 ioHook.on('keydown', evt => {
 
     let key = String.fromCharCode(evt.rawcode)
@@ -33,8 +33,8 @@ ioHook.on('keydown', evt => {
 
         console.log('cast spell ' + spell + ' on champ ' + key)
 
-        spell = null;
-        champIconPos = null;
+        spell = null
+        champIconPos = null
     }
 
 })
