@@ -6,6 +6,7 @@ robot.setKeyboardDelay(0)
 
 let spell = null
 let champIconPos = null
+
 ioHook.on('keydown', evt => {
 
     let key = String.fromCharCode(evt.rawcode)
