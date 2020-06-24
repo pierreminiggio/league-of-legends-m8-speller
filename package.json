@@ -13,6 +13,7 @@
   },
   "homepage": "https://github.com/pierreminiggio/youtube-video-watcher#readme",
   "dependencies": {
+    "iohook": "^0.6.5",
     "robotjs": "^0.6.0"
   }
 }
