@@ -13,19 +13,14 @@ ioHook.on('keydown', evt => {
         spell = key.toLowerCase()
     }
 
-    switch (key) {
-        case 'a':
-            champIconPos = {x: screenSize.width - 150, y: screenSize.height - 380}
-            break
-        case 'b':
-            champIconPos = {x: screenSize.width - 110, y: screenSize.height - 380}
-            break
-        case 'c':
-            champIconPos = {x: screenSize.width - 70, y: screenSize.height - 380}
-            break
-        case 'd':
-            champIconPos = {x: screenSize.width - 30, y: screenSize.height - 380}
-            break
+    if (key === 'a') {
+        champIconPos = {x: screenSize.width - 150, y: screenSize.height - 380}
+    } else if (key === 'b') {
+        champIconPos = {x: screenSize.width - 110, y: screenSize.height - 380}
+    } else if (key === 'c') {
+        champIconPos = {x: screenSize.width - 70, y: screenSize.height - 380}
+    } else if (key === 'd') {
+        champIconPos = {x: screenSize.width - 30, y: screenSize.height - 380}
     }
 
     if (spell !== null && champIconPos !== null) {
