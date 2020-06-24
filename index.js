@@ -17,16 +17,26 @@ ioHook.on('keydown', evt => {
         case 'a':
             champIconPos = {x: screenSize.width - 150, y: screenSize.height - 380}
             break
+        case 'b':
+            champIconPos = {x: screenSize.width - 110, y: screenSize.height - 380}
+            break
+        case 'c':
+            champIconPos = {x: screenSize.width - 70, y: screenSize.height - 380}
+            break
+        case 'd':
+            champIconPos = {x: screenSize.width - 30, y: screenSize.height - 380}
+            break
     }
 
     if (spell !== null && champIconPos !== null) {
-        console.log('go')
         let mousePos = robot.getMousePos()
 
         robot.moveMouse(champIconPos.x, champIconPos.y)
         robot.keyTap(spell)
 
         robot.moveMouse(mousePos.x, mousePos.y)
+
+        console.log('cast spell ' + spell + ' on champ ' + key)
 
         spell = null;
         champIconPos = null;
